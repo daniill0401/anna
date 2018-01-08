@@ -1,0 +1,40 @@
+.header_wrapper, .footer_wrapper {
+  background-color: #000;
+  height: 6.25em;
+  width: 100%;
+  font-family: "hel-light", sans-serif;
+  padding-left: 8em;
+  padding-right: 9em;
+  text-align: center; }
+
+.header_left, .header_right, .footer_left, .footer_right {
+  height: 100%;
+  height: 6.25em; }
+
+.header_right, .footer_right {
+  text-align: right; }
+
+.header_left, .footer_left {
+  text-align: left; }
+
+.header_button, .footer_button {
+  margin-right: 3em; }
+
+.header_logo-img, .footer_logo-img {
+  width: 7.2em; }
+
+.header_insta-img, .footer_insta-img {
+  width: 5.2em; }
+
+.footer_copy {
+  font-family: "hel-light", sans-serif; }
+
+@media (max-width: 1500px) {
+  .header_wrapper {
+    padding-left: 4em;
+    padding-right: 5em; } }
+
+@media (max-width: 1250px) {
+  .header_wrapper {
+    padding-left: 2em;
+    padding-right: 2.5em; } }

@@ -1,0 +1,24 @@
+include vars
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=1100")
+		- var styles = ["css/main.css", "css/grid24.css", "css/header&footer.css", "css/menu.css", "css/insta.css", "css/bootstrap-theme.css", "css/collection.css", "css/mobile_menu.css", "css/map.css"]
+		each style in styles
+			link(rel="stylesheet", href=style)
+		title Sometitle
+	body
+		include header
+		include map
+		include insta
+		include footer
+		include popup
+		include mobile_menu
+		script.
+			var shops = ["Via Borgonuovo, 18, 20121 Milano MI", "123 6th St. Melbourne, FL 32904", "44 Shirley Ave. West Chicago, IL 60185", "12 Rue de la Harpe, Paris"]
+		script(src="http://code.jquery.com/jquery-3.2.1.min.js", integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=", crossorigin="anonymous")
+		script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_2P3TWvcDFSHxIxinrK2-Cs6qcMPprTw&callback=createMap" defer)
+		- var scripts = ["js/main.js", "js/map.js", "js/insta.js", "js/popup.js", "js/menu.js"]
+		each script in scripts
+			script(src=script)

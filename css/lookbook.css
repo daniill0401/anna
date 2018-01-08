@@ -1,0 +1,117 @@
+.lookbook_wrapper {
+  text-align: center;
+  padding-top: 4.5em;
+  padding-bottom: 2.7em;
+  width: 100%; }
+
+.lookbook_title {
+  font-family: "hel-thin", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase; }
+  .lookbook_title-left {
+    color: #222; }
+  .lookbook_title-right {
+    color: #b06b72; }
+
+.lookbook_blocks {
+  width: 100%;
+  margin-top: 2.5em; }
+
+.lookbook_block {
+  font-size: 1em;
+  padding: 1.2em; }
+  .lookbook_block-inner {
+    position: relative;
+    height: 34em;
+    background-position: center top;
+    background-size: cover;
+    cursor: pointer; }
+    .lookbook_block-inner:hover .caption {
+      margin-top: 0;
+      opacity: 1; }
+  .lookbook_block-caption {
+    font-family: "hel-thin", sans-serif;
+    position: relative;
+    z-index: 10;
+    margin-top: 3em;
+    text-transform: uppercase;
+    color: #fff;
+    opacity: 0;
+    transition: all ease-in-out .3s; }
+
+.lookbook_more {
+  margin-top: 3em;
+  padding: 0 3em; }
+
+.lookbook_popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100; }
+  .lookbook_popup-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); }
+  .lookbook_popup-cross {
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    width: 2em;
+    height: 2em;
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    z-index: 100;
+    transition: all ease-in-out .2s; }
+    .lookbook_popup-cross:hover {
+      stroke: white; }
+  .lookbook_popup-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 44em;
+    max-height: 100%;
+    margin-top: -22em;
+    margin-left: -16.94em;
+    width: 33.88em;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 2px; }
+    .lookbook_popup-window-inner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-position: center top;
+      background-size: cover;
+      display: none; }
+  .lookbook_popup-arrow {
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    margin-top: -2.5em;
+    width: 5em;
+    height: 5em;
+    stroke: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    transition: all ease-in-out .2s; }
+    .lookbook_popup-arrow:hover {
+      stroke: white; }
+    .lookbook_popup-arrow-left {
+      left: 2em; }
+    .lookbook_popup-arrow-right {
+      right: 2em; }
+
+@media (max-width: 550px) {
+  .lookbook_block {
+    width: 100%; }
+  .lookbook_popup-window {
+    width: 90%;
+    left: 5%;
+    margin-left: 0; } }

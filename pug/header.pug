@@ -1,0 +1,13 @@
+include vars
+header.header_wrapper.clearfix
+	.header_left.col-xs-6.vert-center
+		a.header_logo-link(href="/")
+			img.header_logo-img.logo(src="img/logo.png", alt="Avrora couture")
+	.header_mobright.col-xs-18
+		nav.header_middle.header_menu-wrapper.menu_wrapper.col-xs-16
+			include menu
+		.header_right.col-xs-8.vert-center
+			p.header_button.button.contact_us
+				span.button_text="Contact us"
+			a.header_insta-link(href="https://www.instagram.com/auroracoutures/", target="_blank")
+				img.header_insta-img(src="img/insta_logo.png")

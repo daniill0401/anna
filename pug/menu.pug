@@ -1,0 +1,19 @@
+include vars
+each item, index in menu_items
+	.menu_item.vert-center(data-href=menu_href[index], class="menu_item-"+(index+1), data-index=index)
+		span.menu_item-text=item
+		if index == 0
+			ul.menu_collections
+				.menu_collections-triangle
+				- var collections = ["Milano 2018", "Italian Boutique 2017"]
+				each coll in collections
+					a.menu_collections-li(class="menu_collections-li-"+(index+1), href="collection.html")
+						.menu_collections-text=coll
+.menu_line
+svg.menu_svg(viewBox="0 0 50 40")
+	g.menu_svg-top
+		path(d="M0,5 l50,0")
+	g.menu_svg-middle
+		path(d="M0,20 l50,0")
+	g.menu_svg-bottom
+		path(d="M0,35 l50,0")

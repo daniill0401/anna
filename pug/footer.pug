@@ -1,0 +1,15 @@
+include vars
+footer.footer_wrapper.clearfix
+	.footer_left.col-xs-6.vert-center
+		a.footer_logo-link(href="/")
+			img.footer_logo-img.logo(src="img/logo.png", alt="Avrora couture")
+			p.footer_copy="© 2017 Aurora Couture. All rights reserved."
+	.footer_mobright.col-xs-18
+		nav.footer_middle.footer_menu_wrapper.menu_wrapper.col-xs-16
+			.footer_menu-inner
+				include menu
+		.footer_right.col-xs-8.vert-center
+			p.footer_button.button.contact_us
+				span.button_text="Contact us"
+			a.footer_insta-link(href="https://www.instagram.com/auroracoutures/", target="_blank")
+				img.footer_insta-img(src="img/insta_logo.png")

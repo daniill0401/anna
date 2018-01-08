@@ -1,0 +1,24 @@
+section.lookbook_wrapper#look(data-show="4")
+	h1.lookbook_title.title
+		span.lookbook_title-left="look"
+		span.lookbook_title-right="book"
+	- var items = new Array(12);
+	.lookbook_blocks.clearfix
+		each val, index in items
+			- var back = "background-image: url('img/lookbook_"+(index%4+1)+".png')"
+			.lookbook_block.col-md-6.col-xs-12
+				.lookbook_block-inner.hover_effect.col-xs-24.vert-center(style=back, data-index=index)
+					p.lookbook_block-caption.title.caption="ines"
+	p.button.button_black.main_button.lookbook_more
+		span.button_text="view more"
+.lookbook_popup
+	.lookbook_popup-overlay
+	svg.lookbook_popup-cross(viewBox="0 0 30 30")
+		path(d="M0,0 l30,30 m-30,0 l30,-30")
+	svg.lookbook_popup-arrow.lookbook_popup-arrow-left(viewBox="0 0 50 50")
+		path(d="M5,25 l25,-25 m0,50 l-25,-25")
+	.lookbook_popup-window
+		.lookbook_popup-window-1.lookbook_popup-window-inner
+		.lookbook_popup-window-2.lookbook_popup-window-inner
+	svg.lookbook_popup-arrow.lookbook_popup-arrow-right(viewBox="0 0 50 50")
+		path(d="M45,25 l-25,-25 m0,50 l25,-25")

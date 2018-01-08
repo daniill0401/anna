@@ -1,0 +1,41 @@
+.popup-mail.popup-contact
+	.popup-mail-left
+		div
+			.popup-mail-title
+				img(src='img/header-logo.png', alt='', class="popup-logo")
+				a.popup-mail-close.contact_cross(href='#')
+			#wpcf7-f4-o1.wpcf7(role='form', dir='ltr', lang='ru-RU')
+				.screen-reader-response
+				form.wpcf7-form(action='/#wpcf7-f4-o1', method='post', novalidate='novalidate')
+					div(style='display: none;')
+						input(name='_wpcf7', value='4', type='hidden')
+						input(name='_wpcf7_version', value='4.8', type='hidden')
+						input(name='_wpcf7_locale', value='ru_RU', type='hidden')
+						input(name='_wpcf7_unit_tag', value='wpcf7-f4-o1', type='hidden')
+						input(name='_wpcf7_container_post', value='0', type='hidden')
+						input(name='_wpcf7_nonce', value='d88d316767', type='hidden')
+					.popup-mail-item
+						label(for='input-00') Your Name
+						br
+						span.wpcf7-form-control-wrap.your-name
+							input#input-00.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required(name='your-name', value='', size='40', aria-required='true', aria-invalid='false', type='text')
+					.popup-mail-item
+						label(for='input-01') Your E-mail
+						br
+						span.wpcf7-form-control-wrap.your-email
+							input#input-01.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email(name='country-and-city', value='', size='40', aria-required='true', aria-invalid='false', type='text')
+					.popup-mail-item
+						label(for='input-00') Your country & city
+						br
+						span.wpcf7-form-control-wrap.your-name
+							input#input-00.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required(name='your-name', value='', size='40', aria-required='true', aria-invalid='false', type='text')
+					.popup-mail-item
+						label(for='input-02') Your Question
+						br
+						span.wpcf7-form-control-wrap.your-message
+							textarea#input-02.wpcf7-form-control.wpcf7-textarea(name='your-message', cols='40', rows='5', aria-invalid='false')
+					p
+						input.wpcf7-form-control.wpcf7-submit.popup-mail-button(value='Send', type='submit')
+						span.ajax-loader
+					.wpcf7-response-output.wpcf7-display-none
+	.popup-mail-right

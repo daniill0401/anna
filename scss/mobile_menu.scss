@@ -1,0 +1,39 @@
+@import "vars";
+
+
+.mobile_menu {
+	&-right {
+		background-image: url(../img/mobile_menu.png);
+	}
+	&_item {
+		text-transform: uppercase;
+		font-size: 2em;
+		margin-top: 1.65em;
+		font-weight: 400;
+		font-family: $mainfont;
+		cursor: pointer;
+		&-text {
+			transition: all ease-in-out .2s;
+			&:hover {
+				color: #a4646a;
+			}
+		}
+	}
+	&_collections {
+		display: block;
+		font-size: .8em;
+		&-li {
+			display: block;
+			text-decoration: none;
+			margin-top: .8em;
+			color: rgba(255,255,255,.6);
+			transition: all ease-in-out .2s;
+			&:hover {
+				color: #a4646a;
+			}
+		}
+	}
+	&-title {
+		margin-bottom: 8.4em;
+	}
+}

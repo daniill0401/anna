@@ -1,0 +1,25 @@
+include vars
+.map_wrapper.col-xs-24
+	.map_wrapper-inner.col-xs-24
+		.map_left.col-xs-9
+			h1.map_title.title
+				span.map_title-left.title-left
+					| where to 
+				span.map_title-right.title-right
+					| buy
+			.map_choose.map_choose-country
+				.map_choose-label
+					span.map_choose-text="Choose country"
+					img.map_choose-arrow(src="img/down-arrow.png")
+					ul.map_choose-list
+				.map_choose-input(type="text", name="Country")
+			.map_choose.map_choose-city
+				.map_choose-label
+					span.map_choose-text="Choose city"
+					img.map_choose-arrow(src="img/down-arrow.png")
+					ul.map_choose-list
+				.map_choose-input(type="text", name="Country")
+			p.button_black.map_button
+				span.button_text="Search"
+		.map_right.col-xs-15
+			.map_window#map

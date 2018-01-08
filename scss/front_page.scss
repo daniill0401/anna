@@ -1,0 +1,93 @@
+@import "vars.scss";
+
+.first {
+	&_wrapper {
+		position: relative;
+		height: calc(100% - #{$header_height});
+		width: 100%;
+	}
+
+	&_slider {
+		&-wrapper, &-window {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			top: 0;
+			left: 0;
+		}
+		&-window {
+			background-image: url(../img/first_photo.png);
+			background-position: center top;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	}
+}
+
+.second, .third {
+
+	&_wrapper {
+		background-position: center top;
+		background-size: cover;
+		height: $second_height;
+		width: 100%;
+		color: #fff;
+	}
+
+	&_right, &_left {
+		text-align: center;
+		height: $second_height;
+	}
+
+	&_title {
+		font-family: $thfont;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 2.7em;
+	}
+
+	&_desc {
+		margin-top: 1.5em;
+		font-family: $secfont;
+		font-weight: 400;
+		font-size: 1em;
+		line-height: 1.8;
+		width: 20em;
+	}
+	&_button {
+		margin-top: 3em;
+		padding: 0 1.5em;
+	}
+}
+
+.second {
+	&_wrapper {
+		background-image: url(../img/second_photo.png);
+	}
+	&_right {
+		padding-right: 5em;
+	}
+	&_content {
+		padding-bottom: 1em;
+	}
+}
+
+.third {
+	&_wrapper {
+		background-image: url(../img/third_photo.png);
+	}
+	&_left {
+		padding-left: 7%;
+	}
+}
+
+
+@media(max-width: 700px){
+	.second, .third {
+		&_right, &_left {
+			width: 100%;
+			margin: 0;
+			padding: 0 2%;
+		}
+	}
+}

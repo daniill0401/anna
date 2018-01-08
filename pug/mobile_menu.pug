@@ -1,0 +1,20 @@
+include vars
+.popup-mail.mobile_menu
+	.popup-mail-left
+		div
+			.popup-mail-title.mobile_menu-title
+				img(src='img/header-logo.png', alt='', class="popup-logo")
+				a.popup-mail-close.mobile_menu-close(href='#')
+			#wpcf7-f4-o1.wpcf7(role='form', dir='ltr', lang='ru-RU')
+				.screen-reader-response
+				each item, index in menu_items
+					.mobile_menu_item.vert-center(class="mobile_menu_item-"+(index+1), data-index=index)
+						span.mobile_menu_item-text(data-href=menu_href[index])=item
+						if index == 0
+							ul.mobile_menu_collections
+								.mobile_menu_collections-triangle
+								- var collections = ["Milano 2018", "Italian Boutique 2017"]
+								each coll in collections
+									a.mobile_menu_collections-li(class="menu_collections-li-"+(index+1), href="collection.html")
+										.mobile_menu_collections-text=coll
+	.popup-mail-right.mobile_menu-right

@@ -1,0 +1,54 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=1100")
+		- var styles = ["css/main.css", "css/grid24.css", "css/header&footer.css", "css/menu.css", "css/insta.css", "css/become.css", "css/bootstrap-theme.css", "css/slick.css", "css/item.css", "css/mobile_menu.css"]
+		each style in styles
+			link(rel="stylesheet", href=style)
+		title Sometitle
+	body
+		include header
+		section.item_wrapper.container.col-xs-24
+			.item_right.item_right-mobile.col-xs-11
+				.item_title.title="Rosalie"
+				.item_collection
+					span.item_collection-label.item_pink="Collection:"
+					span.item_collection-name="Milano 2018"
+				.item_sizes
+					span.item_sizes-label.item_pink="Sizes:"
+					span.item_sizes-name="36-54"
+				.item_desc
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur similique provident sed reprehenderit magni eaque.
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur similique provident sed reprehenderit magni eaque.
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur similique provident sed reprehenderit magni eaque.
+			.item_left.col-xs-13
+				.col-md-24.col-lg-17.item_main
+					.item_main-img(style="background-image: url(img/Adel_1.jpg)")
+				.col-md-24.col-lg-7.item_rest
+					- var blocks = new Array(4);
+					each val, index in blocks
+						.item_rest-block
+							.item_rest-img.hover_effect(style="background-image: url(img/Adel_" + (index%2+2) + ".jpg)")
+							//- .item_rest-img.hover_effect(style="background-image: url(img/rosa_" + (index%2+2) + ".jpg)")
+			.item_right.col-xs-11
+				.item_title.title="Rosalie"
+				.item_collection
+					span.item_collection-label.item_pink="Collection:"
+					span.item_collection-name="Milano 2018"
+				.item_sizes
+					span.item_sizes-label.item_pink="Sizes:"
+					span.item_sizes-name="36-54"
+				.item_desc
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur similique provident sed reprehenderit magni eaque.
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur similique provident sed reprehenderit magni eaque.
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur similique provident sed reprehenderit magni eaque.
+		include become
+		include insta
+		include footer
+		include popup
+		include mobile_menu
+		script(src="http://code.jquery.com/jquery-3.2.1.min.js", integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=", crossorigin="anonymous")
+		- var scripts = ["js/insta.js", "js/popup.js", "js/menu.js", "js/slick.min.js", "js/jquery.zoom.min.js", "js/item.js"]
+		each script in scripts
+			script(src=script)

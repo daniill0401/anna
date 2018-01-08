@@ -1,0 +1,38 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=1100")
+		- var styles = ["css/main.css", "css/grid24.css", "css/header&footer.css", "css/menu.css", "css/front_page.css", "css/insta.css", "css/lookbook.css", "css/become.css", "css/bootstrap-theme.css", "css/mobile_menu.css"]
+		each style in styles
+			link(rel="stylesheet", href=style)
+		title Sometitle
+	body
+		include header
+		section.first_wrapper
+			.first_slider-wrapper
+				.first_slider-window
+		seciton.second_wrapper.clearfix#collect
+			.second_right.col-xs-12.col-xs-offset-12.vert-center
+				.second_content
+					h1.second_title.title="Milano 2018"
+					h2.second_desc!="Trandy & classic. Luxury & elegant.<br> Tender & passionate. New collection <br>„Milano 2018“ ready to order"
+					a.button.second_button.main_button(href="collection.html")
+						span.button_text="View collection"
+		seciton.third_wrapper.clearfix
+			.third_left.col-xs-12.vert-center
+				.third_content
+					h1.third_title.title="Italian boutique"
+					h2.third_desc!="Hot italian love at first sight. <br> Perfect gowns for the perfect weddings."
+					a.button.third_button.main_button(href="collection.html")
+						span.button_text="View collection"
+		include lookbook
+		include become
+		include insta
+		include footer
+		include popup
+		include mobile_menu
+		script(src="http://code.jquery.com/jquery-3.2.1.min.js", integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=", crossorigin="anonymous")
+		- var scripts = ["js/lookbook.js", "js/insta.js", "js/popup.js", "js/menu.js"]
+		each script in scripts
+			script(src=script)

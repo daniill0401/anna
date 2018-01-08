@@ -1,0 +1,150 @@
+@import "vars";
+
+.map {
+	$h: 41em;
+	&_wrapper {
+		padding: 3em 2em;
+		&-inner {
+			height: $h;
+		}
+	}
+
+	&_left, &_right {
+		height: $h;
+	}
+
+	&_left {
+		padding: 2.6em 3.6em 0 6.2em;
+	}
+
+	&_right {
+		padding: 2em 2.5em 1.3em 0;
+	}
+
+	&_title {
+		font-family: $thfont;
+	}
+
+	&_choose {
+		position: relative;
+		&-country {
+			margin-top: 3.3em;
+		}
+		&-city {
+			margin-top: 4.5em;
+		}
+		&-label {
+			font-family: $thfont;
+			color: #888;
+			cursor: pointer;
+		}
+		&-text {
+			font-size: 1.5em;
+		}
+		&-input {
+			font-family: $thfont;
+			margin-top: 1.9em;
+			padding-left: 1em;
+			padding-bottom: .4em;
+			border: 0;
+			height: 1.5em;
+			border-bottom: 1px solid #000;
+			background-color: #fff;
+			width: 100%;
+		}
+		&-arrow {
+			cursor: pointer;
+			float: right;
+			margin-top: .7em;
+			transition: all ease-in-out .2s;
+			.active & {
+				transform: rotate(90deg);
+			}
+		}
+		&-list {
+			&-outer {
+			position: absolute;
+			width: 100%;
+			z-index: 100;
+			font-family: $thfont;
+			padding-top: .8em;
+			}
+			display: none;
+			width: 100%;
+			list-style: none;
+			max-height: 21em;
+			overflow: auto;
+		}
+		&-li {
+			line-height: 2;
+			border-bottom: 1px solid rgba(0,0,0,.1);
+			background-color: #fff;
+			cursor: pointer;
+			padding-left: 1em;
+			transition: all ease-in-out .1s;
+			&-1 {
+				border-top: 1px solid rgba(0,0,0,.1);
+			}
+			&:hover {
+				background-color: #ccc;
+				color: #fff;
+			}
+		}
+	}
+
+	&_button {
+		padding: 0 3.83em;
+		line-height: 3;
+		border-width: 2px;
+		margin-top: 3.6em;
+		font-size: 1.05em;
+	}
+
+	&_window {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+@media(max-width: 1370px) {
+	.map {
+		&_left {
+			padding-left: 2em;
+		}
+		&_right {
+			padding-right: 1em;
+		}
+	}
+}
+
+@media(max-width: 980px) {
+	.map {
+		&_wrapper {
+			padding: 3em 1em;
+		}
+		&_left {
+			padding-left: 1em;
+			padding-right: 1.5em;
+		}
+		&_right {
+			padding-right: 0em;
+		}
+	}
+}
+
+@media(max-width: 790px) {
+	.map {
+		&_wrapper {
+			&-inner {
+				height: auto;
+			}
+		}
+		&_left {
+			height: auto;
+			padding-bottom: 2em;
+		}
+		&_left, &_right {
+			width: 100%;
+		}
+	}
+}

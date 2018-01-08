@@ -1,0 +1,46 @@
+@import "vars";
+.insta {
+	&_wrapper {
+		text-align: center;
+		padding: 4.5em 0;
+	}
+
+	&_title {
+		font-family: $thfont;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+
+	&_blocks {
+		margin-top: 2em;
+	}
+
+	&_block {
+		display: inline-block;
+		margin-top: 2em;
+		width: 20%;
+		padding: 0 1em;
+		&-inner {
+			height: 20em;
+			width: 100%;
+			background-position: center top;
+			background-size: cover;
+		}
+	}
+}
+
+@media(max-width: 800px){
+	.insta {
+		&_block {
+			width: 50%;
+		}
+	}
+}
+
+@media(max-width: 480px){
+	.insta {
+		&_block {
+			width: 100%;
+		}
+	}
+}

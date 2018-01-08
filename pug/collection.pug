@@ -1,0 +1,23 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=1100")
+		- var styles = ["css/main.css", "css/grid24.css", "css/header&footer.css", "css/menu.css", "css/insta.css", "css/lookbook.css", "css/become.css", "css/bootstrap-theme.css", "css/collection.css", "css/mobile_menu.css"]
+		each style in styles
+			link(rel="stylesheet", href=style)
+		title Sometitle
+	body
+		include header
+		section.collection_first-wrapper
+			h1.collection_first-title="Milano 2018"
+		include collection_lookbook
+		include become
+		include insta
+		include footer
+		include popup
+		include mobile_menu
+		script(src="http://code.jquery.com/jquery-3.2.1.min.js", integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=", crossorigin="anonymous")
+		- var scripts = ["js/insta.js", "js/popup.js", "js/menu.js", "js/lookbook.js"]
+		each script in scripts
+			script(src=script)

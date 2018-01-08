@@ -1,0 +1,29 @@
+.mobile_menu-right {
+  background-image: url(../img/mobile_menu.png); }
+
+.mobile_menu_item {
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-top: 1.65em;
+  font-weight: 400;
+  font-family: "hel-light", sans-serif;
+  cursor: pointer; }
+  .mobile_menu_item-text {
+    transition: all ease-in-out .2s; }
+    .mobile_menu_item-text:hover {
+      color: #a4646a; }
+
+.mobile_menu_collections {
+  display: block;
+  font-size: .8em; }
+  .mobile_menu_collections-li {
+    display: block;
+    text-decoration: none;
+    margin-top: .8em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: all ease-in-out .2s; }
+    .mobile_menu_collections-li:hover {
+      color: #a4646a; }
+
+.mobile_menu-title {
+  margin-bottom: 8.4em; }

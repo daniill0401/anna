@@ -1,0 +1,65 @@
+@import "vars.scss";
+
+.header, .footer {
+	&_wrapper {
+		background-color: #000;
+		height: $header_height;
+		width: 100%;
+		font-family: $mainfont;
+		padding-left: 8em;
+		padding-right: 9em;
+		text-align: center;
+	}
+	&_left, &_right {
+		height: 100%;
+		height: $header_height;
+	}
+
+	&_right {
+		text-align: right;
+	}
+
+	&_left {
+		text-align: left;
+	}
+
+	&_button {
+		margin-right: 3em;
+	}
+
+	&_logo {
+		&-img {
+			width: 7.2em;
+		}
+	}
+
+	&_insta {
+		&-img {
+			width: 5.2em;
+		}
+	}
+}
+
+.footer {
+	&_copy {
+		font-family: $mainfont;
+	}
+}
+
+@media (max-width: 1500px){
+	.header {
+		&_wrapper {
+			padding-left: 4em;
+			padding-right: 5em;
+		}
+	}
+}
+
+@media (max-width: 1250px){
+	.header {
+		&_wrapper {
+			padding-left: 2em;
+			padding-right: 2.5em;
+		}
+	}
+}

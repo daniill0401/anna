@@ -1,0 +1,19 @@
+.collection_first-wrapper {
+  background-image: url(../img/collection_bg.png);
+  background-position: center top;
+  background-size: cover;
+  height: 34em;
+  position: relative; }
+
+.collection_first-title {
+  position: absolute;
+  bottom: 6em;
+  right: 8.4em;
+  font-size: 2.6em;
+  font-family: "hel-thin", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400; }
+
+.collection_lookbook-wrapper {
+  padding-top: .5em; }

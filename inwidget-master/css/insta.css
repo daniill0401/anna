@@ -1,0 +1,25 @@
+.insta_wrapper {
+  text-align: center;
+  padding: 4.5em 0; }
+
+.insta_title {
+  font-family: "hel-thin", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase; }
+  .insta_title-left {
+    color: #222; }
+  .insta_title-right {
+    color: #b06b72; }
+
+.insta_blocks {
+  margin-top: 4em; }
+
+.insta_block {
+  display: inline-block;
+  width: 20%;
+  padding: 0 1em; }
+  .insta_block-inner {
+    height: 20em;
+    width: 100%;
+    background-position: center top;
+    background-size: cover; }

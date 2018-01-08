@@ -1,0 +1,10 @@
+section.lookbook_wrapper.collection_lookbook-wrapper#look(data-show="8")
+	- var items = new Array(12);
+	.lookbook_blocks.clearfix
+		each val, index in items
+			- var back = "background-image: url('img/coll_"+(index%8+1)+".png')"
+			a.lookbook_block.col-md-6.col-xs-12(href="item.html")
+				.lookbook_block-inner.col-xs-24.vert-center.img_hover(style=back, data-index=index)
+					p.lookbook_block-caption.title.caption="aisha"
+	p.button.button_black.main_button.lookbook_more
+		span.button_text="view more"
